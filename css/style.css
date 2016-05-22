@@ -1,0 +1,119 @@
+/*****************************************************************************   #Box-sizing                                                             *
+****************************************************************************/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: sans-serif; }
+
+/******************************************************************************
+*               #header                                                       *
+******************************************************************************/
+.site {
+  background-color: black; }
+  .site-header {
+    height: 100px;
+    width: 100%;
+    background-color: grey; }
+    .site-header-nav {
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      .site-header-nav ul {
+        width: 100%;
+        height: 100%; }
+        .site-header-nav ul li {
+          float: left;
+          height: 100%;
+          width: 25%;
+          marging: auto;
+          color: white;
+          padding: 40px 130px;
+          border-color: black; }
+
+/******************************************************************************
+*  #top                                                                       *
+******************************************************************************/
+.site {
+  /******************************************************************************
+  **** #bottom                                                                  *
+  ******************************************************************************/ }
+  .site-top {
+    height: 560px; }
+    .site-top .logo-container {
+      margin: 40px auto;
+      width: 65%; }
+    .site-top .profile-container {
+      margin: 0 auto;
+      width: 200px;
+      height: 100px; }
+      .site-top .profile-container .profile {
+        border-radius: 20px;
+        width: 100%; }
+  .site-bottom {
+    background-color: #2D3033;
+    height: 560px;
+    position: relative; }
+    .site-bottom .slider {
+      width: 50%;
+      height: 400px;
+      margin: auto 10%;
+      position: relative;
+      top: 70px;
+      display: block;
+      float: left; }
+      .site-bottom .slider-nav {
+        height: 70%;
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        padding: 40px 0 0 40px; }
+      .site-bottom .slider .container {
+        border-radius: 10px;
+        overflow: hidden; }
+        .site-bottom .slider .container img {
+          height: 100%;
+          width: 100%; }
+        .site-bottom .slider .container h2 {
+          position: absolute;
+          bottom: 0px;
+          background-color: white;
+          width: 100%;
+          height: 30px;
+          text-align: center;
+          opacity: 0.4;
+          color: white;
+          border-radius: 0 0 10px 10px; }
+
+/******************************************************************************
+**  #footer                                                                  **
+******************************************************************************/
+.site-footer {
+  background-color: #E5E5E4;
+  color: #899B9F;
+  height: 200px;
+  position: relative;
+  overflow: hidden; }
+  .site-footer-about {
+    width: 50%;
+    height: 223px;
+    padding: 20px 30px;
+    float: right; }
+    .site-footer-about img {
+      float: left; }
+    .site-footer-about .textarea {
+      text-align: center; }
+  .site-footer-sitemap {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    padding-top: 5%; }
+  .site-footer img {
+    width: 100px; }
+
+/*# sourceMappingURL=style.css.map */
