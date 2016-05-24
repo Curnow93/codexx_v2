@@ -59,7 +59,9 @@ h1, h2, h3, h4, h5, h6, p, a, li{
 		.profile-container{
 			margin: 0 auto;
 			width: 200px;
-			height: 100px;
+			height: 200px;
+			border-width: 2px;
+			border-color: white;
 			.profile{
 				border-radius: 20px;
 				width: 100%;
@@ -88,7 +90,11 @@ h1, h2, h3, h4, h5, h6, p, a, li{
 				position: absolute;
 				right: 0;
 				top: 70px;
-				padding: 40px 0 0 40px;
+				padding: 40px 0 0 60px;
+				color: white;
+				ul li{
+					margin: 30px auto;
+				}
 			}
 			.container{
 				border-radius: 10px;
@@ -105,7 +111,7 @@ h1, h2, h3, h4, h5, h6, p, a, li{
 					height: 30px;
 					text-align: center;
 					opacity: 0.4;
-					color: white;
+					color: black;
 					border-radius: 0 0 10px 10px;
 				}
 			}
@@ -122,12 +128,11 @@ h1, h2, h3, h4, h5, h6, p, a, li{
 		//background-image: url("../img/circuit5.jpg");
 		background-color: #E5E5E4;
 		color: #899B9F;
-		height: 200px;
+		height: 140px;
 		position: relative;
 		overflow: hidden;
 		&-about{
 			width: 50%;
-			height: 223px;
 			padding: 20px 30px;
 			float: right;
 			img{
@@ -142,8 +147,12 @@ h1, h2, h3, h4, h5, h6, p, a, li{
 			width: 50%;
 			height: 100%;
 			text-align: right;
-			padding-top: 5%;
-			
+			padding: 2%;
+			ul li{
+				display: inline;
+				float: left;
+				margin: 3%;
+			}
 		}
 		img{
 			width: 100px;
