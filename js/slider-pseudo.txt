@@ -1,0 +1,9 @@
+//slider psuedocode
+
+Hide other images
+For every image in the gallery
+	After two seconds switch the image
+		Hide current image
+		Show next image
+	Repeat
+	When the slider reaches the last image loop back to the first

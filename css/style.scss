@@ -40,8 +40,9 @@ a{
 					float: left;
 					height: 100%;
 					width: 25%;
+                    text-align: center;
+                    padding-top: 40px;
 					color: white;
-					padding: 40px 130px;
 					text-decoration: none;
 					border: 1px solid limegreen;
 				}
@@ -56,29 +57,43 @@ a{
 
 .site{
 	&-top{
+        color: white;
 		height: 560px;
+		margin: 0 auto;
 		.logo-container{
-			margin: 40px auto;
-			width: 65%;
-		}
-		.logosmall{
-			width: 200px;
-			margin: auto;
+			margin: 10px auto;
+			width: 75%;
+            img{
+                width: 100%;
+            }
 		}
 		.profile-container{
 			margin: 0 auto;
 			width: 200px;
-			height: 200px;
+			height: 300px;
+            text-align: center;
 			.profile{
 				border-radius: 20px;
 				width: 100%;
 				border: 2px solid white;
+                margin-bottom: 20px;
 			}
 		}
 	}
 	&-abouttop{
-		height: 250px;
-		margin: 20px;
+		height: 50%;
+		margin: 20px auto;
+		width: 70%;
+		.logosmall{
+			width: 60%;
+            min-width: 350px;
+			margin: 40px auto;
+			float: left;
+		}
+		.profile-container{
+			float: right;
+			margin: 20px;
+		}
 	}
 /******************************************************************************
 **** #bottom                                                                  *
@@ -93,17 +108,18 @@ a{
 		.slider{
 			width: 50%;
 			height: 400px;
+            min-width: 400px;
 			margin: auto 10%;
 			position: relative;
 			top: 70px;
 			display: block;
 			float: left;
 			&-nav{
-				height: 70%;
+				height: 400px;
 				width: 40%;
 				position: absolute;
 				right: 0;
-				top: 70px;
+				top: 110px;
 				padding: 40px 0 0 60px;
 				color: white;
 				ul li{
@@ -113,6 +129,8 @@ a{
 			.container{
 				border-radius: 10px;
 				overflow: hidden;
+                width: 100%;
+                height: 100%;
 				img{
 					height: 100%;
 					width: 100%;
@@ -120,7 +138,7 @@ a{
 				h2{
 					position: absolute;
 					bottom: 0px;
-					background-color: white;
+					background-color: lightslategrey;
 					width: 100%;
 					height: 10%;
 					text-align: center;
@@ -144,6 +162,7 @@ a{
 			margin: 0 auto;
 			padding: 20px;
 			text-align: center;
+			clear: both;
 			img{
 				width: 40%;
 				display: inline-block;
@@ -174,12 +193,15 @@ a{
 		height: 140px;
 		position: relative;
 		overflow: hidden;
+		width: 100%;
 		&-about{
 			width: 50%;
 			padding: 20px 30px;
 			float: right;
+			border-left: 1px solid gray;
 			img{
 				float: left;
+				width: 100px;
 			}
 			.textarea{
 				text-align: center;
@@ -191,15 +213,57 @@ a{
 			height: 100%;
 			text-align: right;
 			padding: 2%;
+			position: relative;
 			ul li{
 				display: inline;
 				float: left;
 				margin: 3%;
 			}
 		}
-		img{
-			width: 100px;
-		}
 	}
 	
+}
+
+/*********************************************************************** #MediaQueries                                                       **********************************************************************/
+
+@media screen and (max-width: 565px){
+    .site{
+        &-abouttop{
+            height: 100%;
+            margin: 20px auto;
+            width: 100%;
+            .logosmall{
+                width: 100%;
+            }
+            .profile-container{
+                margin: 20px auto;
+                width: 250px;
+                float: none;
+            }
+	   }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .site{
+        &-bottom{
+            .slider{
+                height: 300px;
+                width: 50%;
+                &-nav{
+                    width: 100%;
+                    position: relative;
+                    ul{
+                        li{
+                            display: inline;
+                        }
+                    }
+                }
+            }
+            iframe{
+                width: 50px;
+            }
+        }
+    }
+    
 }
